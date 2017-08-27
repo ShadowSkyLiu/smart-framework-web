@@ -27,7 +27,7 @@ public final class DatabaseHelper {
 
     /**数据库连接池*/
     private static final BasicDataSource DATA_SOURCE;
-
+ 
     static {
         Properties conf = PropsUtil.loadProps("config.properties");
         String driver = conf.getProperty("jdbc.driver");

@@ -6,11 +6,13 @@ import org.smart4j.framework.annotation.Inject;
 import org.smart4j.framework.bean.Handler;
 import org.smart4j.framework.bean.Param;
 import org.smart4j.framework.bean.View;
+import org.smart4j.framework.helper.BeanHelper;
 import org.smart4j.framework.helper.ControllerHelper;
 import org.smart4j.frameworkweb.model.Customer;
 import org.smart4j.frameworkweb.service.CustomerService;
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class CustomerController {
@@ -34,7 +36,7 @@ public class CustomerController {
 //        System.out.print(beanMap);
 
 //        // test Ioc反转
-//        Map<Class<?>, Object> beanMap = BeanHelper.getBeanMap();
+        Map<Class<?>, Object> beanMap = BeanHelper.getBeanMap();
 //        IocHelper.fun();
 
         // test Controller Handler
